@@ -11,8 +11,6 @@ function carouselSlider() {
     	carouselList.animate({"marginLeft":-1000}, 600, "linear", moveFirstSlide());
 	}
 
-	changeSlide();
-
 	function changeSlideAfterClick() {
 		arrowRight.on("click", function() {
 			stopInterval();
@@ -41,7 +39,6 @@ function carouselSlider() {
 	}
 
 	var interval = setInterval(changeSlide, 3000); 
-   	interval();
 
     function stopInterval() {
     	clearInterval(interval);
